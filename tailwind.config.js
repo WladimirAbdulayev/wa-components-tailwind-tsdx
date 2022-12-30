@@ -6,7 +6,12 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        primary: '#012e50',
+        secondary: '#779ed0',
+      },
+    },
   },
   variants: {
     extend: {},
