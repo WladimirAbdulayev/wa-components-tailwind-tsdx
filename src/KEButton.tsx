@@ -1,28 +1,25 @@
 import React, { FC, ButtonHTMLAttributes } from 'react';
-import styled from 'styled-components';
 
-const StyledButton = styled.button.attrs(
-  ({ variant }: { variant: ButtonVariants }) => ({
-    className: `px-8 py-2 font-semibold ${
-      variant === 'default' ? 'text-white' : 'text-red-700'
-    } transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-red-300 to-blue-300 hover:from-pink-400 hover:to-indigo-400`,
-  })
-)<{ variant: ButtonVariants }>``;
+type ButtonVariants = 'default' | 'warning' | 'info';
 
-type ButtonVariants = 'default' | 'warning';
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   variant?: ButtonVariants;
 }
 
 export const KEButton: FC<ButtonProps> = ({
-  text,
+  text = 'Get Started',
   variant = 'default',
-  ...rest
 }) => {
   return (
-    <StyledButton variant={variant} {...rest}>
-      {text}
-    </StyledButton>
+    <button
+      className={`flex items-center justify-center w-1/3 m-auto text-2xl text-center bg-primary uppercase text-secondary shadow-xl rounded-full hover:bg-gray-900
+      ${variant === 'default' ? 'bg-primary' : ' bg-secondary'}`}
+    >
+      <div className="bg-secondary rounded-2xl text-white m-3 p-3">
+        <h2 className="text-sm text-left">{variant}</h2>
+        <div>{text}</div>
+      </div>
+    </button>
   );
 };
