@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.9",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -38,7 +38,7 @@
   },
   "name": "wa-components-tailwind-tsdx",
   "author": "wladimirabdulayev",
-  "module": "dist/react-tw-blog-post.esm.js",
+  "module": "dist/wa-components-tailwind-tsdx.esm.js",
   "size-limit": [
     {
       "path": "dist/wa-components-tailwind-tsdx.cjs.production.min.js",
