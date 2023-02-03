@@ -85,8 +85,5 @@
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
   },
-  "dependencies": {
-    "@headlessui/react": "^1.7.7",
-    "styled-components": "^5.2.1"
-  }
+  "dependencies": {}
 }
