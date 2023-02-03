@@ -2,12 +2,12 @@ import React, { FC, ButtonHTMLAttributes } from 'react';
 
 type ButtonVariants = 'default' | 'warning' | 'info';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IKEButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   variant?: ButtonVariants;
 }
 
-export const KEButton: FC<ButtonProps> = ({
+export const KEButton: FC<IKEButtonProps> = ({
   text = 'Get Started',
   variant = 'default',
 }) => {

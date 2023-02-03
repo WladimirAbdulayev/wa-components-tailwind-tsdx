@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { KECard, CardProps } from '../src';
+import { KECard, IKECardProps } from '../src';
 
 const meta: Meta = {
   title: 'KE-Card',
@@ -19,7 +19,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<CardProps> = args => <KECard {...args} />;
+const Template: Story<IKECardProps> = args => <KECard {...args} />;
 
 export const SCCard = Template.bind({});
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="24.362" viewBox="0 0 39 24.362">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #002946;
+      }
+      .cls-1, .cls-3 {
+        clip-rule: evenodd;
+      }
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+      .cls-5 {
+        clip-path: url(#clip-path);
+      }
+      .cls-15 {
+        clip-path: url(#clip-path-01);
+      }
+      .cls-16 {
+        clip-path: url(#clip-path-02);
+      }
+      .cls-18 {
+        fill: #779ed0;
+      }
+    </style>
+
+    <clipPath id="clip-path-01">
+      <path id="Pfad_01" data-name="Pfad 01" class="cls-1" d="M179.658-45.089q-1.011-1.051-2.052-2.083-1.91-1.893-3.884-3.681c-1.415,1.274-2.824,2.6-4.191,3.957q-4.011,3.974-7.557,8.222l-.01.009L157.477-42.3q3.713-4.49,7.941-8.686,4.044-4.008,8.372-7.547l.008-.011q4.15,3.423,8.048,7.282,1.042,1.032,2.053,2.084Z"/>
+    </clipPath>
+    <clipPath id="clip-path-02">
+      <path id="Pfad_02" data-name="Pfad 02" class="cls-3" d="M169.974-43.749q1.015,1.057,2.063,2.094,3.9,3.859,8.052,7.284l0,0q4.326-3.543,8.381-7.555,4.23-4.191,7.941-8.685l-.007-.007-4.462-3.813.017.014q-3.592,4.312-7.665,8.353-2.082,2.065-4.243,4l.053-.048q-1.974-1.789-3.886-3.682-1.065-1.056-2.1-2.131Z"/>
+    </clipPath>
+
+  </defs>
+
+  <g id="Logo_Color" data-name="Logo Color" transform="translate(0)">
+    
+    <g id="Gruppe_1" data-name="Gruppe 1" class="cls-15" transform="translate(-157.477 58.733)">
+      <g id="Gruppe_2" data-name="Gruppe 2" class="cls-6">
+        <path id="Pfad_3" data-name="Pfad 3" class="cls-2" d="M156.477-59.54H184.9v21.875H156.477Z"/>
+      </g>
+    </g>
+    <g id="Gruppe_3" data-name="Gruppe 3" class="cls-16" transform="translate(-157.477 58.733)">
+      <g id="Gruppe_4" data-name="Gruppe 4">
+        <path id="Pfad_4" data-name="Pfad 4" class="cls-18" d="M168.974-55.435h28.433v22.064H168.974Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
