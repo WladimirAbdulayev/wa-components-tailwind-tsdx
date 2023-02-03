@@ -51,6 +51,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.12.13",
+    "@rollup/plugin-image": "^3.0.2",
     "@size-limit/preset-small-lib": "^4.9.2",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-info": "^5.3.21",
@@ -72,6 +73,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-postcss": "^4.0.0",
     "size-limit": "^4.9.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
@@ -85,8 +87,5 @@
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
   },
-  "dependencies": {
-    "@rollup/plugin-image": "^3.0.2",
-    "rollup-plugin-copy": "^3.4.0"
-  }
+  "dependencies": {}
 }
