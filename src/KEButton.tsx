@@ -2,7 +2,8 @@ import React, { FC, ButtonHTMLAttributes } from 'react';
 
 type ButtonVariants = 'default' | 'warning' | 'info';
 
-export interface IKEButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IKEButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   variant?: ButtonVariants;
 }

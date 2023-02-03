@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import {IKECardProps} from './types'
-import admin from './admin.png'
+import { IKECardProps } from './types';
+import admin from './admin.png';
 
 export const KELogoCard: FC<IKECardProps> = ({
   children,

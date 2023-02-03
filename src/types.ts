@@ -22,7 +22,7 @@ export interface IKEButtonProps
 export interface IKELogoButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-  label: string,
+  label: string;
   variant?: KEButtonVariants;
 }
 
