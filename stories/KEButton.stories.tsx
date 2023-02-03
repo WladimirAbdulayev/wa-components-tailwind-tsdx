@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { KEButton, ButtonProps } from '../src';
+import { KEButton, IKEButtonProps } from '../src';
 
 const meta: Meta = {
   title: 'KEButton',
@@ -19,7 +19,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonProps> = args => <KEButton {...args} />;
+const Template: Story<IKEButtonProps> = args => <KEButton {...args} />;
 
 export const SCButtonDefault = Template.bind({});
 export const SCButtonInfo = Template.bind({});

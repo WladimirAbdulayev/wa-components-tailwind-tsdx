@@ -1,6 +1,7 @@
+/// <reference path="my.d.ts" />
 import React, { FC } from 'react';
 import { IKECardProps } from './types';
-import admin from './admin.png';
+import admin from './assets/admin.png';
 
 export const KELogoCard: FC<IKECardProps> = ({
   children,
