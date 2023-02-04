@@ -1,9 +1,9 @@
 import React from 'react';
-import { useState } from "react"
-import { animated } from '@react-spring/web'
+import { useState } from 'react';
+import { animated } from '@react-spring/web';
 
 export interface ValveProps {
-  accentColor?: string
+  accentColor?: string;
 }
 
 const Pointer = () => {
@@ -18,13 +18,10 @@ const Pointer = () => {
         d="M257.159 202.829l.337-.664a22.44 22.44 0 01.952-1.557l-.007.001.033-.045a21.988 21.988 0 011.998-2.546c10.056-12.755 54.003-68.22 54.003-68.22a2.784 2.784 0 00-3.485-.027l-69.439 54.874a22.324 22.324 0 00-5.751 6.814l-.337.664c-3.515 6.974-3.168 15.117.943 21.797l.073.122c.079.128.165.255.249.381l.116.174c.102.154.205.308.266.393.056.08.114.16.229.319.165.226.333.452.47.623l.169.215c.196.244.394.483.557.666l.106.122.079.09c.198.22.395.437.589.638l.194.196c.187.191.377.377.62.608l.252.231c.164.149.328.296.496.442l.091.076.752.612c.169.129.343.258.534.398l.298.214a18.635 18.635 0 00.78.523l.127.082c.25.158.506.312.83.5l.107.06c.272.157.552.304.787.424.093.05.184.098.239.125a29.563 29.563 0 00.862.407l.178.081c.174.077.349.147.559.23l.141.058c.135.056.268.11.395.159.058.022.116.042.178.062a22.359 22.359 0 007.691 1.359c.853 0 1.692-.065 2.524-.157-3.954-6.627-4.254-14.643-.785-21.524z"
       ></path>
     </g>
-  )
-}
+  );
+};
 
-const ValveB = ({
-  accentColor = '#774dd7',
-}: ValveProps) => {
-
+const ValveB = ({ accentColor = '#774dd7' }: ValveProps) => {
   const [toggle, setToggle] = useState(false);
 
   // const springs = useSpring({
@@ -42,7 +39,10 @@ const ValveB = ({
           borderRadius: 8,
         }}
       />
-      <svg onClick={() => { setToggle(!toggle) }}
+      <svg
+        onClick={() => {
+          setToggle(!toggle);
+        }}
         xmlns="http://www.w3.org/2000/svg"
         width="60"
         height="60"
@@ -76,7 +76,7 @@ const ValveB = ({
           fill="#EA6428"
           d="M413.969 186.494l-28.062-4.323s-10.952-64.163-36.615-89.582l18.671-19.869c0-.002 44.078 57.298 46.006 113.774z"
         ></path>
-        {(toggle) && <Pointer />}
+        {toggle && <Pointer />}
         <path
           fill="#7C7A75"
           d="M256 361.51c-6.387 0-12.698-.451-18.922-1.323v104.822h37.843V360.186A136.263 136.263 0 01256 361.51z"
@@ -106,6 +106,6 @@ const ValveB = ({
       </svg>
     </>
   );
-}
+};
 
 export default ValveB;

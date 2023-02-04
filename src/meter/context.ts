@@ -1,16 +1,16 @@
-import { createContext, SVGAttributes } from 'react'
+import { createContext, SVGAttributes } from 'react';
 
 interface ContextProps {
-  currentFillAngle: number
-  radius: number
-  rotation: number
-  min: number
-  max: number
-  angle: number
-  lineCap: SVGAttributes<SVGPathElement>['strokeLinecap']
-  accentColor: string
-  fontFamily: string
-  value: number
+  currentFillAngle: number;
+  radius: number;
+  rotation: number;
+  min: number;
+  max: number;
+  angle: number;
+  lineCap: SVGAttributes<SVGPathElement>['strokeLinecap'];
+  accentColor: string;
+  fontFamily: string;
+  value: number;
 }
 
 export default createContext<ContextProps>({
@@ -24,4 +24,4 @@ export default createContext<ContextProps>({
   accentColor: '#00e0ff',
   fontFamily: 'helvetica',
   value: 0,
-})
+});
