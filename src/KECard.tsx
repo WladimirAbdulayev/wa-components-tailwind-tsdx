@@ -1,10 +1,5 @@
-import React, { FC, ReactChild } from 'react';
-
-export interface IKECardProps {
-  children?: ReactChild;
-  label?: string;
-  text: string;
-}
+import React, { FC } from 'react';
+import { IKECardProps } from './types';
 
 export const KECard: FC<IKECardProps> = ({
   children,

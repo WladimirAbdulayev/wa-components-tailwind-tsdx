@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { KEButton, IKEButtonProps } from '../src';
 
 const meta: Meta = {
-  title: 'KEButton',
+  title: 'KE-Button',
   component: KEButton,
   argTypes: {
     text: {
