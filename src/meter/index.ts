@@ -1,10 +1,9 @@
-import Speedometer from './Speedometer';
-export default Speedometer;
-export { default as Arc } from './Arc';
-export { default as Background } from './Background';
-export { default as DangerPath } from './DangerPath';
-export { default as Indicator } from './Indicator';
-export { default as Marks } from './Marks';
-export { default as Needle } from './Needle';
-export { default as Progress } from './Progress';
+export { Arc } from './Arc';
+export { Background } from './Background';
+export { DangerPath } from './DangerPath';
+export { Indicator } from './Indicator';
+export { Marks } from './Marks';
+export { Needle } from './Needle';
+export { Progress } from './Progress';
+export { Speedometer } from './Speedometer';
 export { Thermostat } from './Thermostat';

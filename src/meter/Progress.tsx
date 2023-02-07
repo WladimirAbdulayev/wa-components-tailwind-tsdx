@@ -9,12 +9,12 @@ interface ProgressProps extends SVGAttributes<SVGPathElement> {
   lineCap?: SVGAttributes<SVGPathElement>['strokeLinecap'];
 }
 
-export default function Progress({
+export const Progress = ({
   color,
   arcWidth = 5,
   lineCap,
   ...rest
-}: ProgressProps) {
+}: ProgressProps) => {
   const {
     accentColor,
     radius,
@@ -38,4 +38,4 @@ export default function Progress({
       {...rest}
     />
   );
-}
+};

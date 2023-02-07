@@ -16,7 +16,7 @@ export interface SpeedometerProps {
   children: JSX.Element | Array<JSX.Element | false>;
 }
 
-export default function Speedometer({
+export const Speedometer = ({
   width = 250,
   height = width,
   angle = 250,
@@ -28,7 +28,7 @@ export default function Speedometer({
   accentColor = '#00e0ff',
   fontFamily = 'helvetica',
   children,
-}: SpeedometerProps) {
+}: SpeedometerProps) => {
   const radius = width / 2;
   const currentFillAngle = useMemo(() => {
     const clampValue = Math.min(max, Math.max(min, Number(value)));
@@ -55,4 +55,4 @@ export default function Speedometer({
       </svg>
     </SpeedometerContext.Provider>
   );
-}
+};

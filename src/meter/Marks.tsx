@@ -25,7 +25,7 @@ interface MarksProps {
   children?: (mark: Mark, index: number) => JSX.Element;
 }
 
-export default function Marks({
+export const Marks = ({
   step = 10,
   lineCap = 'butt',
   lineColor = 'white',
@@ -34,7 +34,7 @@ export default function Marks({
   fontSize = 10,
   lineSize = 12,
   children,
-}: MarksProps) {
+}: MarksProps) => {
   const { rotation, min, max, angle, radius, fontFamily } = useContext(Context);
 
   const marks: Mark[] = useMemo(() => {
@@ -93,4 +93,4 @@ export default function Marks({
       ))}
     </>
   );
-}
+};

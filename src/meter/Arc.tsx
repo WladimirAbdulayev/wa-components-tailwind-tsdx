@@ -10,13 +10,13 @@ interface ArcProps extends SVGAttributes<SVGPathElement> {
   lineCap?: SVGAttributes<SVGPathElement>['strokeLinecap'];
 }
 
-export default function Arc({
+export const Arc = ({
   color = 'black',
   opacity = 0.3,
   arcWidth = 4,
   lineCap,
   ...rest
-}: ArcProps) {
+}: ArcProps) => {
   const { radius, lineCap: globalLineCap, angle } = useContext(Context);
 
   const secondaryPath = useMemo(
@@ -35,4 +35,4 @@ export default function Arc({
       {...rest}
     />
   );
-}
+};

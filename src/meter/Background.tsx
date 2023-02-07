@@ -9,12 +9,12 @@ interface BackgroundProps extends SVGAttributes<SVGPathElement> {
   opacity?: number;
 }
 
-export default function Background({
+export const Background = ({
   angle = 360,
   color = 'black',
   opacity = 0.5,
   ...rest
-}: BackgroundProps) {
+}: BackgroundProps) => {
   const { rotation, radius } = useContext(Context);
   const backgroundStart = rotation + angle / 2;
 
@@ -33,4 +33,4 @@ export default function Background({
   return (
     <path d={backgroundPath} fill={color} fillOpacity={opacity} {...rest} />
   );
-}
+};

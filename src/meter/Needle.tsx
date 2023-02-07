@@ -14,7 +14,7 @@ interface NeedleProps {
   children?: () => JSX.Element;
 }
 
-export default function Needle({
+export const Needle = ({
   offset = 25,
   baseWidth = 6,
   baseOffset = 18,
@@ -24,7 +24,7 @@ export default function Needle({
   circleColor,
   strokeLinejoin = 'round',
   children,
-}: NeedleProps) {
+}: NeedleProps) => {
   const { currentFillAngle, radius, accentColor } = useContext(Context);
   const bottom = radius + baseOffset;
   const points = `
@@ -54,4 +54,4 @@ export default function Needle({
       {children ? children() : defaultNeedle}
     </g>
   );
-}
+};

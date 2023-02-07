@@ -11,14 +11,14 @@ interface DangerPathProps extends SVGAttributes<SVGPathElement> {
   offset?: number;
 }
 
-export default function DangerPath({
+export const DangerPath = ({
   color = '#FF3333',
   angle = 50,
   arcWidth = 4,
   lineCap,
   offset = 6,
   ...rest
-}: DangerPathProps) {
+}: DangerPathProps) => {
   const { radius, angle: globalAngle, lineCap: globalLineCap } = useContext(
     Context
   );
@@ -45,4 +45,4 @@ export default function DangerPath({
       {...rest}
     />
   );
-}
+};

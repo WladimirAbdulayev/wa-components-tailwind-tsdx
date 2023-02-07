@@ -1,16 +1,17 @@
 import React from 'react';
-import Arc from './Arc';
-import Background from './Background';
-import DangerPath from './DangerPath';
-import Indicator from './Indicator';
-import Marks from './Marks';
-import Needle from './Needle';
-import Progress from './Progress';
-import Speedometer from './Speedometer';
+import { Arc } from './Arc';
+import { Background } from './Background';
+import { DangerPath } from './DangerPath';
+import { Indicator } from './Indicator';
+import { Marks } from './Marks';
+import { Needle } from './Needle';
+import { Progress } from './Progress';
+import { Speedometer } from './Speedometer';
 
 export interface IThermostatProps {
   temperature: number;
 }
+
 export const Thermostat = ({ temperature }: IThermostatProps) => {
   return (
     <Speedometer

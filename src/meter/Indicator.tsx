@@ -10,13 +10,13 @@ interface IndicatorProps extends SVGProps<SVGTextElement> {
   children?: JSX.Element;
 }
 
-export default function Indicator({
+export const Indicator = ({
   fontSize = 45,
   // color = 'white',
   fontFamily,
   children,
   ...rest
-}: IndicatorProps) {
+}: IndicatorProps) => {
   const {
     value,
     radius,
@@ -43,4 +43,4 @@ export default function Indicator({
       {fixedValue}°C
     </text>
   );
-}
+};
