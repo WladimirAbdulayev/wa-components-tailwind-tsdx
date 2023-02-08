@@ -22,8 +22,8 @@ export default meta;
 
 const Template: Story<IKELogoButtonProps> = args => <KELogoButton {...args} />;
 
-export const keLogoButtonDefault = Template.bind({});
-export const keLogoButtonInfo = Template.bind({});
+export const KELogoButtonDefault = Template.bind({});
+export const KELogoButtonInfo = Template.bind({});
 
-keLogoButtonDefault.args = { text: 'Logo', variant: 'default' };
-keLogoButtonInfo.args = { text: 'Info', variant: 'info' };
+KELogoButtonDefault.args = { text: 'Logo', variant: 'default' };
+KELogoButtonInfo.args = { text: 'Info', variant: 'info' };

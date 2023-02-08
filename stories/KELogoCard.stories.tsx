@@ -22,6 +22,6 @@ export default meta;
 
 const Template: Story<IKELogoCardProps> = args => <KELogoCard {...args} />;
 
-export const sbKELogoCard = Template.bind({});
+export const KELogoCardDefault = Template.bind({});
 
-sbKELogoCard.args = { text: 'KE-Logo-Card' };
+KELogoCardDefault.args = { text: 'KE-Logo-Card' };
