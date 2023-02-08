@@ -1,6 +1,11 @@
 import { ButtonHTMLAttributes, ReactChild } from 'react';
 
-export type KEButtonVariants = 'default' | 'warning' | 'info';
+export type KEButtonVariants =
+  | 'default'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'error';
 
 export type KECalendarDatum = {
   day: string;

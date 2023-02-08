@@ -1,8 +1,8 @@
 import React from 'react';
-import Arc from './Arc';
-import Needle from './Needle';
-import Progress from './Progress';
-import Speedometer from './Speedometer';
+import { Arc } from './Arc';
+import { Needle } from './Needle';
+import { Progress } from './Progress';
+import { Speedometer } from './Speedometer';
 
 const Circular = () => {
   // const center = 250 / 2

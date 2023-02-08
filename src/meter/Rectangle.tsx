@@ -17,7 +17,9 @@ export default function Rectangle({
   return (
     <svg width={200} height={200}>
       <g>
-        <rect height={height} width={width} x={x} y={y} fill={'darkred'} />
+        <rect height={height} width={width} x={x} y={y} fill={'darkred'}>
+          {children}
+        </rect>
       </g>
     </svg>
   );

@@ -21,7 +21,7 @@ const Pointer = () => {
   );
 };
 
-const ValveB = ({ accentColor = '#774dd7' }: ValveProps) => {
+const ValveB = ({ accentColor = '#ff6d6d' }: ValveProps) => {
   const [toggle, setToggle] = useState(false);
 
   // const springs = useSpring({
@@ -35,7 +35,7 @@ const ValveB = ({ accentColor = '#774dd7' }: ValveProps) => {
         style={{
           width: 80,
           height: 80,
-          background: '#ff6d6d',
+          background: accentColor,
           borderRadius: 8,
         }}
       />

@@ -21,8 +21,12 @@ export default meta;
 
 const Template: Story<IKEButtonProps> = args => <KEButton {...args} />;
 
-export const SCButtonDefault = Template.bind({});
-export const SCButtonInfo = Template.bind({});
+export const KEButtonDefault = Template.bind({});
+export const KEButtonInfo = Template.bind({});
+export const KEButtonSuccess = Template.bind({});
+export const KEButtonWarning = Template.bind({});
 
-SCButtonDefault.args = { text: 'Get Started', variant: 'default' };
-SCButtonInfo.args = { text: 'Get Started', variant: 'info' };
+KEButtonDefault.args = { text: 'Get Started', variant: 'default' };
+KEButtonInfo.args = { text: 'Be Informed', variant: 'info' };
+KEButtonSuccess.args = { text: 'Well Done!', variant: 'success' };
+KEButtonWarning.args = { text: 'Attention', variant: 'warning' };
