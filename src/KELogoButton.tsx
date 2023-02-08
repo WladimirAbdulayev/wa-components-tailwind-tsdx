@@ -1,7 +1,7 @@
 /// <reference path="my.d.ts" />
 import React, { FC } from 'react';
 import { IKELogoButtonProps } from './types';
-import logo from './assets/logo.svg';
+// import logo from './assets/logo.svg';
 import { KELogo } from './svg/KELogo';
 
 export const KELogoButton: FC<IKELogoButtonProps> = ({
@@ -16,7 +16,7 @@ export const KELogoButton: FC<IKELogoButtonProps> = ({
     >
       {children || `KE Component Library`}
       <div className="bg-white rounded-2xl text-secondary m-3 p-3">
-        <img src={logo} alt="logo" />
+        {/* <img src={logo} alt="logo" /> */}
         <KELogo></KELogo>
         <h2>{label}</h2>
         <div>{text}</div>
